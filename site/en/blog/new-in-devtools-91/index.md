@@ -15,9 +15,11 @@ tags:
   - chrome-91
 ---
 
-{% Aside %}
-Interested in helping improve DevTools? Sign up to participate in [Google User Research here](https://google.qualtrics.com/jfe/form/SV_9YbKj35IGoGsDBj?reserved=1&utm_source=Website%20feature&Q_Language=en&utm_medium=own_web&utm_campaign=Q4&productTag=chrm&campaignDate=November2020&referral_code=UXFm430458).
-{% endAside %}
+{% Partial 'devtools/banner.md' %}
+
+{% YouTube id="YCrEmhfwsgg" %}
+
+{% YouTube id="Givhtk3rObE" %}
 
 ## Web Vitals information pop up in the Performance panel {: #web-vitals }
 Hover on a Web Vitals marker in the **Performance** panel to understand what's the indicator about - whether the performance is good, needs improvement, or poor.
@@ -156,7 +158,7 @@ You can now view details on blocked features under the **Permissions policy** se
 
 Open this [demo](http://permission-policy-demo.glitch.me/) page. Go to the **Application** panel and select a frame. In the **Permissions Policy** section, scroll to the **Disabled Features** property. Click on **Show details** to view the details on why the feature is blocked. Click on the icon next to each policy to navigate to the iframe or network request that blocked the feature.
 
-[Permissions policy](https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md) is a web platform API which gives a website the ability to allow or block the use of browser features in its own frame or in iframes that it embeds.
+[Permissions policy](/docs/privacy-sandbox/permissions-policy/) is a web platform API which gives a website the ability to allow or block the use of browser features in its own frame or in iframes that it embeds.
 
 {% Img src="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/8GxecpqtEUv3xoocvcLi.png", alt="Blocked features in the Frame details view", width="800", height="461" %}
 
@@ -189,7 +191,7 @@ Chromium issue: [1186049](https://crbug.com/1186049)
 ### Support for new JavaScript features {: #javascript }
 DevTools now support the new [private brand check](https://v8.dev/features/private-brand-checks) JavaScript language feature, a.k.a `#foo in obj`.
 
-This private brand checks feature extends the [in operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in) to support the [private class fields](https://v8.dev/features/class-fields#private-class-fields) testing on any given object. 
+This private brand checks feature extends the [in operator](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/in) to support the [private class fields](https://v8.dev/features/class-fields#private-class-fields) testing on any given object. 
 
 Try it out in the **Console** and **Sources** panel. You can inspect the private fields in the **Scope** section under the **debugger** pane as well.
 
@@ -244,3 +246,6 @@ The old version of Chrome on the left does not show the source location (e.g. `d
 
 Chromium issue: [1189161](https://crbug.com/1189161)
 
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/whats-new.md' %}

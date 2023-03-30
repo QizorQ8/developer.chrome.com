@@ -40,7 +40,7 @@ To prepare for this codelab:
 
 - Use the latest version of [Google Chrome][11].
 - Start fresh in an empty project directory on your development computer.
-- [Download the reference code][12] for all steps or [view them on Github][13] in case you get
+- [Download the reference code][12] for all steps or [view them on GitHub][13] in case you get
   stuck.
 
 Each step builds on top of the previous. You can skip any step and use previous step solutions in
@@ -48,7 +48,7 @@ the reference code.
 
 Let's get started. Go to [Step 1 - Create and run a Chrome App »][14]
 
-[1]: https://blog.chromium.org/2020/01/moving-forward-from-chrome-apps.html
+[1]: https://blog.chromium.org/2020/08/changes-to-chrome-app-support-timeline.html
 [2]: /apps/migration
 [3]: http://goo.gl/qNNUX
 [4]: ../app_codelab_basics

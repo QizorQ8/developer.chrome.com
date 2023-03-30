@@ -84,9 +84,9 @@ offline or under spotty connectivity.
 Instead of using an iframe, you can call out to an external URL using a webview tag (see [Embed
 external web pages][6]).
 
-[1]: https://blog.chromium.org/2020/01/moving-forward-from-chrome-apps.html
+[1]: https://blog.chromium.org/2020/08/changes-to-chrome-app-support-timeline.html
 [2]: /apps/migration
-[3]: http://www.html5rocks.com/en/tutorials/security/content-security-policy/
+[3]: https://web.dev/csp/
 [4]: app_external#sandboxing
 [5]: app_external#external
 [6]: app_external#webview

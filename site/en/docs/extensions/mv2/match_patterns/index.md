@@ -6,7 +6,7 @@ updated: 2017-10-28
 description: How host permission and content script pattern matching works, with examples.
 ---
 
-{% include 'partials/extensions/mv2-legacy-page.md' %}
+{% Partial 'extensions/mv2-legacy-page.md' %}
 
 [Host permissions][1] and [content script][2] matching are based on a set of URLs defined by match
 patterns. A match pattern is essentially a URL that begins with a permitted scheme (`http`, `https`,
@@ -25,10 +25,10 @@ any URL that starts with a permitted scheme. Each match pattern has 3 parts:
 Here's the basic syntax:
 
 ```text
-<url-pattern> := <scheme>://<host><path>
-<scheme> := '*' | 'http' | 'https' | 'file' | 'ftp' | 'urn'
-<host> := '*' | '*.' <any char except '/' and '*'>+
-<path> := '/' <any chars>
+&lt;url-pattern&gt; := &lt;scheme&gt;://&lt;host&gt;&lt;path&gt;
+&lt;scheme&gt; := '*' | 'http' | 'https' | 'file' | 'ftp' | 'urn'
+&lt;host&gt; := '*' | '*.' &lt;any char except '/' and '*'&gt;+
+&lt;path&gt; := '/' &lt;any chars&gt;
 ```
 
 The meaning of '`*`' depends on whether it's in the _scheme_, _host_, or _path_ part. If the

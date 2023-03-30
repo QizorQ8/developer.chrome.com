@@ -1,8 +1,9 @@
 ---
 layout: "layouts/doc-post.njk"
 title: Best Practices
+seoTitle: Android Custom Tabs best practices
 date: 2020-07-02
-description: Custom Tabs best practices
+description: Learn how to build a great Custom Tabs integration for your app.
 authors:
   - andreban
 ---
@@ -275,12 +276,12 @@ intentBuilder.setToolbarColor(Color.BLUE);
 
 ## Enable the default Share Action or add your own
 
-Make sure you eanble the Share Action to the overflow menu, as users expect to be able to share the
+Make sure you enable the Share Action to the overflow menu, as users expect to be able to share the
 link to the content they are seeing in most use cases:
 
 ```java
     CustomTabsIntent.Builder intentBuilder = new CustomTabsIntent.Builder();
-    intentBuilder.addDefaultShareMenuItem();
+    intentBuilder.setShareState(CustomTabsIntent.SHARE_STATE_ON);
 ```
 
 ## Customize the close button

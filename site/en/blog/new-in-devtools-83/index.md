@@ -4,7 +4,7 @@ title: "What's New In DevTools (Chrome 83)"
 authors:
   - kaycebasques
 date: 2020-03-10
-#updated: YYYY-MM-DD
+updated: 2022-05-18
 description:
   "Emulate color vision deficiencies, emulate locales, COOP and COEP debugging, and lots more."
 hero: 'image/dPDCek3EhZgLQPGtEG3y0fTn4v82/ZYa1YaBoE4bmPPGd1sN2.jpg'
@@ -14,6 +14,8 @@ tags:
   - devtools
   - chrome-83
 ---
+
+{% Partial 'devtools/banner.md' %}
 
 {% YouTube id="MLNERCykDPg" %}
 
@@ -42,7 +44,8 @@ differently (being able to perceive more/less of the relevant colors).
 By designing for the more extreme simulations in DevTools, your web apps are guaranteed to be
 accessible to people with protanomaly, deuteranomaly, tritanomaly, and achromatomaly as well.
 
-Send feedback to [Chromium issue #1003700][3].
+Send feedback to [Chromium issue #1003700][3], or [read more about the
+implementation](/blog/cvd/).
 
 ## Emulate locales {: #locales }
 
@@ -187,6 +190,10 @@ current icons ready?][29] to learn more.
 to cover it in What's New In DevTools (Chrome 81).
 
 {% endAside %}
+
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/whats-new.md' %}
 
 [1]: /docs/devtools/evaluate-performance/reference#rendering
 [2]: http://www.colourblindawareness.org/colour-blindness/types-of-colour-blindness/

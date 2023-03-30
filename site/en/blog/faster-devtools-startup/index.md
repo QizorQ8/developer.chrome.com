@@ -6,12 +6,14 @@ layout: "layouts/blog-post.njk"
 authors:
   - sadym
 date: 2021-02-04
-hero: 'image/dPDCek3EhZgLQPGtEG3y0fTn4v82/53IuclsjUVBaBME7MPRb.jpg'
+hero: 'image/dPDCek3EhZgLQPGtEG3y0fTn4v82/CCqsB2L8tlZJCUt01tkY.jpg'
 alt: ''
 tags:
   - devtools-engineering
   - devtools
 ---
+
+{% Partial 'devtools/banner.md' %}
 
 ## DevTools startup now is ~13% faster 🎉 (from 11.2s down to 10s)
 TL;DR; The result is achieved by removing a redundant serialization.
@@ -57,7 +59,7 @@ For both revisions, we ran the following scenario 5 times:
 
 Based on these experiments, DevTools opens **~13% faster (from 11.2s down to 10s)** with the optimization.
 
-### Hightlights, CPU durations
+### Highlights, CPU durations
 
 <table class="responsive" markdown="1">
 <thead>
@@ -113,3 +115,6 @@ Based on these experiments, DevTools opens **~13% faster (from 11.2s down to 10s
 [Full tracing metrics comparison table](https://docs.google.com/spreadsheets/d/1WuWWORPwMre3m4N_MmJvtJ0xTfq-oBnz87cGtB532Ms/edit?resourcekey=0-Xxv_HIGfVaIZvbmDrmZ2GA)
 
 As a result, DevTools opens and **works faster with less CPU usage**. 🎉
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/engineering-blog.md' %}

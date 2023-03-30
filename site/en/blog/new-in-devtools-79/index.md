@@ -16,6 +16,8 @@ tags:
   - chrome-79
 ---
 
+{% Partial 'devtools/banner.md' %}
+
 ## New features for cookies {: #cookies }
 
 ### Debug why a cookie was blocked {: #blockedcookies }
@@ -149,6 +151,10 @@ Press Control+P in the Console or Sources panels to move your cursor to the line
 Control+N to move your cursor to the line below.
 
 Chromium issue [#983874][19]
+
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/whats-new.md' %}
 
 [1]: https://web.dev/samesite-cookies-explained#changes-to-the-default-behavior-without-samesite
 [2]: https://chromedevtools.github.io/devtools-protocol/

@@ -6,7 +6,7 @@ updated: 2019-03-11
 description: An explanation of content scripts and how to use them in your Chrome Extension.
 ---
 
-{% include 'partials/extensions/mv2-legacy-page.md' %}
+{% Partial 'extensions/mv2-legacy-page.md' %}
 
 Content scripts are files that run in the context of web pages. By using the standard [Document
 Object Model][1] (DOM), they are able to read details of the web pages the browser visits, make
@@ -19,7 +19,7 @@ with the extension. They can also access the URL of an extension's file with
 `chrome.runtime.getURL()` and use the result the same as other URLs.
 
 ```js/1
-//Code for displaying <extensionDir>/images/myimage.png:
+// Code for displaying EXTENSION_DIR/images/myimage.png:
 var imgURL = chrome.runtime.getURL("images/myimage.png");
 document.getElementById("someImage").src = imgURL;
 ```
@@ -419,7 +419,7 @@ window.setTimeout(function() {
 [24]: /docs/extensions/mv2/match_patterns
 [25]: http://www.whatwg.org/specs/web-apps/current-work/#handler-onload
 [26]: http://www.whatwg.org/specs/web-apps/current-work/#dom-document-readystate
-[27]: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+[27]: https://developer.mozilla.org/docs/Web/API/Window/postMessage
 [28]: /docs/extensions/mv2/xhr
 [29]: http://en.wikipedia.org/wiki/Cross-site_scripting
 [30]: http://en.wikipedia.org/wiki/Man-in-the-middle_attack

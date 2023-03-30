@@ -6,18 +6,20 @@ layout: "layouts/blog-post.njk"
 authors:
   - ingvarstepanyan
 date: 2020-12-10
-hero: 'image/dPDCek3EhZgLQPGtEG3y0fTn4v82/cuyrdAwj3IOp4rkKALdK.jpg'
+hero: 'image/dPDCek3EhZgLQPGtEG3y0fTn4v82/SQooNUx2HjOAFjsBPMja.jpg'
 alt: ''
 tags:
   - devtools-engineering
   - devtools
 ---
 
+{% Partial 'devtools/banner.md' %}
+
 {% YouTube id='VBMHswhun-s' %}
 
 ## The road so far {: #past }
 
-A year ago, Chrome [announced initial support](/blog/webassembly-debug)
+A year ago, Chrome [announced initial support](/blog/wasm-debugging-2019)
 for native WebAssembly debugging in Chrome DevTools.
 
 We demonstrated basic stepping support and talked about opportunities
@@ -89,7 +91,7 @@ Now we can go back to the **Sources** panel, enable **Pause on
 exceptions** (⏸ icon), then check **Pause on caught exceptions** and
 reload the page. You should see the DevTools paused on an exception:
 
-{% Img src="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/BLvpLwEA0szeMTxCfApF.png", alt="Screenshot of the Sources panel showing how to enable 'Pause on caugh exceptions'", width="800", height="354" %}
+{% Img src="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/BLvpLwEA0szeMTxCfApF.png", alt="Screenshot of the Sources panel showing how to enable 'Pause on caught exceptions'", width="800", height="354" %}
 
 By default, it stops on an Emscripten-generated glue code, but on the
 right you can see a **Call Stack** view representing the stacktrace of
@@ -426,3 +428,6 @@ working on from here on:
 Meanwhile, please help us out by trying the current beta on your own code and reporting any found
 issues to
 [https://bugs.chromium.org/p/chromium/issues/entry?template=DevTools+issue](https://bugs.chromium.org/p/chromium/issues/entry?template=DevTools+issue).
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/engineering-blog.md' %}

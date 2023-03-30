@@ -6,7 +6,7 @@ updated: 2020-07-21
 description: Step-by-step instructions on how to debug Chrome Extensions.
 ---
 
-{% include 'partials/extensions/mv2-legacy-page.md' %}
+{% Partial 'extensions/mv2-legacy-page.md' %}
 
 Extensions are able to leverage the same debugging benefits [Chrome DevTools][1] provides for web
 pages, but they carry unique behavior properties. Becoming a master extension debugger requires an
@@ -196,7 +196,7 @@ For further information on debugging extensions, watch [Developing and Debugging
 about [Chrome Devtools][14] by reading the documentation.
 
 [1]: https://developers.google.com/web/tools/chrome-devtools/
-[2]: https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/file/WlD8wC6g8khYWPJUsQceQkhXSlv1/KZdyzIighjOsDUPaibEn.zip "broken_background_color.zip"
+[2]: https://storage.googleapis.com/web-dev-uploads/file/WlD8wC6g8khYWPJUsQceQkhXSlv1/KZdyzIighjOsDUPaibEn.zip "broken_background_color.zip"
 [3]: /docs/extensions/reference/runtime#event-onInstalled
 [4]: /docs/extensions/reference/tabs#method-query
 [5]: /docs/extensions/mv2/override

@@ -15,6 +15,8 @@ tags:
   - chrome-63
 ---
 
+{% Partial 'devtools/banner.md' %}
+
 Welcome back! New features coming to DevTools in Chrome 63 include:
 
 - [Multi-client remote debugging support][1].
@@ -123,6 +125,10 @@ now you can send custom tags:
 
 **Figure 3**. After clicking **Sync**, DevTools sends a background sync event with the custom tag
 `update-content` to the service worker
+
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/whats-new.md' %}
 
 [1]: #multi-client
 [2]: #workspaces

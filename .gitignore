@@ -10,6 +10,9 @@ Thumbs.db
 .cache
 .vscode
 .lighthouseci
+.idea*
+.python-version
+tools/devtools/_temp
 
 # Code coverage generated files
 .nyc_output
@@ -18,8 +21,17 @@ Thumbs.db
 # Node modules and output
 node_modules
 dist
+./dist
 **/_includes/css
 
 # Eleventy
 # We generate our own .eleventyignore file dynamically during builds
 .eleventyignore
+
+# External source files
+external/data/
+external/local-build-flag
+
+# Files used during CI
+gulp-tasks/stageGitHub/tmp/**/*
+!gulp-tasks/stageGitHub/tmp/.gitkeep

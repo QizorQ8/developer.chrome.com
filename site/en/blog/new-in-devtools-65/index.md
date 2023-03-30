@@ -14,6 +14,8 @@ tags:
   - chrome-65
 ---
 
+{% Partial 'devtools/banner.md' %}
+
 New features coming to DevTools in Chrome 65 include:
 
 - [**Local Overrides**][1]
@@ -41,7 +43,7 @@ have changed. Chrome auto-updates to a new major version about every 6 weeks.
 Previously, any changes that you made in DevTools would be lost when you reloaded the page. **Local
 Overrides** work for most file types, with a couple of exceptions. See [Limitations][7].
 
-{% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/pPRYEcOzEloITwitsHRd.gif", alt="Persisting a CSS change across page loads with Local Overrides.", width="800", height="469" %}
+{% Img src="image/NJdAV9UgKuN8AhoaPBquL7giZQo1/NTLRycUgArW87HosgaLR.gif", alt="Persisting a CSS change across page loads with Local Overrides.", width="800", height="470", class="screenshot" %}
 
 **Figure 1**. Persisting a CSS change across page loads with **Local Overrides**
 
@@ -294,6 +296,10 @@ See [Quick Start][21] to learn more.
 
 You can also use Puppeteer to expose DevTools features while browsing without ever explicitly
 opening DevTools. See [Using DevTools Features Without Opening DevTools][22] for an example.
+
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/whats-new.md' %}
 
 [1]: #overrides
 [2]: #a11y

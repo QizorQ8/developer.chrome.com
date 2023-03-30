@@ -16,6 +16,8 @@ tags:
   - chrome-67
 ---
 
+{% Partial 'devtools/banner.md' %}
+
 New features and major changes coming to DevTools in Chrome 67 include:
 
 - [Search across all network headers][1]
@@ -45,7 +47,7 @@ have changed. Chrome auto-updates to a new major version about every 6 weeks.
 ## Search across all network headers and responses {: #network-search }
 
 Open the **Network** panel then press <kbd>Command</kbd>+<kbd>F</kbd> (Mac) or <kbd>Control</kbd>+F
-(Windows, Linux, Chrome OS) to open the new **Network Search** pane. DevTools searches the headers
+(Windows, Linux, ChromeOS) to open the new **Network Search** pane. DevTools searches the headers
 and bodies of all network requests for the query that you provide.
 
 {% Img src="image/admin/TnRMO7DetVC3UM3ONfQH.png", alt="Searching for the text 'cache-control' with the new Network Search pane.", width="800", height="479" %}
@@ -71,7 +73,7 @@ also pretty-prints results to aid scannability.
 **Figure 3**. The old UI on the left, and the new UI on the right
 
 Press <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>F</kbd> (Mac) or
-<kbd>Control</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> (Windows, Linux, Chrome OS) to open **Global
+<kbd>Control</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> (Windows, Linux, ChromeOS) to open **Global
 Search**. You can also open it via the [Command Menu][13].
 
 ## CSS variable value previews in the **Styles** pane {: #vars }
@@ -224,6 +226,10 @@ each process so that you can see the total work that each process is causing.
 {% Img src="image/admin/NEKRPLyQuqzgNg7Gw9uY.png", alt="Per-process flame charts in a Performance recording.", width="800", height="644" %}
 
 **Figure 13**. Per-process flame charts in a Performance recording
+
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/whats-new.md' %}
 
 [1]: #network-search
 [2]: #vars

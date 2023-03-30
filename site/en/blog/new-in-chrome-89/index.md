@@ -31,7 +31,7 @@ Here's what you need to know:
 * [Web Share, and Web Share Target](#webshare) arrive on the desktop.
 * And, there's [plenty more](#more).
 
-I'm [Pete LePage](https://twitter.com/petele), working, and shooting
+I'm [Pete LePage](https://petelepage.com/), working, and shooting
 from home, let's dive in and see what's new for developers in Chrome 89!
 
 ## WebHID, WebNFC, and Web Serial {: #hardware }
@@ -122,7 +122,7 @@ need, and you can copy and paste directly in to your site.
 
 If your site allows users to create, edit, or interact with files, you should
 be using the Web Share and Web Share Target APIs. These APIs have been
-available on mobile for some time but are now supported on Chrome OS and
+available on mobile for some time but are now supported on ChromeOS and
 Windows.
 
 Web Share makes it possible for users to send files or data to other
@@ -182,7 +182,7 @@ installable PWAs.
 <br style="clear:both;">
 
 And, if you've used a Trusted Web Activity to make your PWA available in the
-Play Store for Chrome OS, you can sign up for the
+Play Store for ChromeOS, you can sign up for the
 [Digital Goods API origin trial](/blog/new-in-chrome-88/#play-billing).
 
 ## Further reading

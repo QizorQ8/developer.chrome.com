@@ -1,51 +1,54 @@
 ---
 layout: "layouts/doc-post.njk"
 title: "Overriding Chrome settings"
+seoTitle: "Overriding Chrome settings in Chrome Extensions"
 date: 2014-02-14
-updated: 2016-11-07
+updated: 2023-02-06
 description: How to override Chrome settings from a Chrome Extension.
 ---
 
-{% include 'partials/extensions/mv2page-in-mv3.md' %}
 
 Settings overrides are a way for extensions to override selected Chrome settings. The API is
-available on Windows in all current versions of Chrome and is available on Mac in Chrome 56 and
-later.
+available on Windows and Mac in all current versions of Chrome.
 
 ## Homepage, search provider, and startup pages {: #others }
 
-Here is an example how [homepage][1], [search provider][2] and [startup pages][3] can be modified in
-the [extension manifest][4]. Web sites used in the settings API must be [verified][5] (via Webmaster
-Tools) as being associated with that item in the Chrome Web Store. Note that if you verify ownership
-for a domain (for example, http://example.com) you can use any subdomain or page (for example,
-http://app.example.com or http://example.com/page.html) within your extension.
+Here is an example of how [homepage][1], [search provider][2], and [startup pages][3] can be modified 
+in the [extension manifest][4]. Any domain used in the settings API must be [verified][5] (via 
+Google Search Console) by the same developer account publishing the extension. Note that if you 
+verify ownership for a domain (for example, https://example.com) you can use any subdomain or page 
+(for example, https://app.example.com or https://example.com/page.html) within your extension.
+
+Using the settings override permission while also requesting any additional capabilities or permissions is inconsistent with our single purpose policy. When Chrome detects that an item is potentially violating our single purpose policy, a confirmation dialog is shown to the user. Extensions that limit themselves to only modifying a single setting without seeking additional capabilities or permissions do not get a confirmation dialog.
+
+This applies to Chrome 107 and later.
 
 ```json
 {
   "name": "My extension",
   ...
   "chrome_settings_overrides": {
-    "homepage": "http://www.homepage.com",
+    "homepage": "https://www.homepage.com",
     "search_provider": {
         "name": "name.__MSG_url_domain__",
         "keyword": "keyword.__MSG_url_domain__",
-        "search_url": "http://www.foo.__MSG_url_domain__/s?q={searchTerms}",
-        "favicon_url": "http://www.foo.__MSG_url_domain__/favicon.ico",
-        "suggest_url": "http://www.foo.__MSG_url_domain__/suggest?q={searchTerms}",
-        "instant_url": "http://www.foo.__MSG_url_domain__/instant?q={searchTerms}",
-        "image_url": "http://www.foo.__MSG_url_domain__/image?q={searchTerms}",
+        "search_url": "https://www.foo.__MSG_url_domain__/s?q={searchTerms}",
+        "favicon_url": "https://www.foo.__MSG_url_domain__/favicon.ico",
+        "suggest_url": "https://www.foo.__MSG_url_domain__/suggest?q={searchTerms}",
+        "instant_url": "https://www.foo.__MSG_url_domain__/instant?q={searchTerms}",
+        "image_url": "https://www.foo.__MSG_url_domain__/image?q={searchTerms}",
         "search_url_post_params": "search_lang=__MSG_url_domain__",
         "suggest_url_post_params": "suggest_lang=__MSG_url_domain__",
         "instant_url_post_params": "instant_lang=__MSG_url_domain__",
         "image_url_post_params": "image_lang=__MSG_url_domain__",
         "alternate_urls": [
-          "http://www.moo.__MSG_url_domain__/s?q={searchTerms}",
-          "http://www.noo.__MSG_url_domain__/s?q={searchTerms}"
+          "https://www.moo.__MSG_url_domain__/s?q={searchTerms}",
+          "https://www.noo.__MSG_url_domain__/s?q={searchTerms}"
         ],
         "encoding": "UTF-8",
         "is_default": true
     },
-    "startup_pages": ["http://www.startup.com"]
+    "startup_pages": ["https://www.startup.com"]
    },
    "default_locale": "de",
    ...
@@ -56,12 +59,12 @@ http://app.example.com or http://example.com/page.html) within your extension.
 
 Values in the manifest can be customized in the following ways:
 
-- All values of the `search_provider`, `homepage` and `startup_pages` properties can be localized
-  using the [chrome.i18n API][6].
+- All values of the `search_provider`, `homepage`, and `startup_pages` properties can be localized
+  using the [`chrome.i18n` API][6].
 - For [external extensions][7], the `search_provider`, `homepage` and `startup_pages` URL values can
-  be parametrized using a registry key. A new registry entry should be created next to the
-  "update_url" key (see instructions [here][8]). The value name is "install_parameter", the value
-  data is an arbitrary string:
+  be parametrized using a registry key. Create a new registry entry next to the
+  `"update_url"` key (see instructions [here][8]). The key name is `"install_parameter"`, the value
+  is an arbitrary string:
 
   ```json
   {
@@ -70,9 +73,9 @@ Values in the manifest can be customized in the following ways:
   }
   ```
 
-  All occurrences of the substring "\_\_PARAM\_\_" in the manifest URLs will be substituted with the
-  "install_parameter" value. If "install_parameter" is absent, occurrences of "\_\_PARAM\_\_" are
-  removed. Note that "\_\_PARAM\_\_" cannot be part of the hostname. It needs to occur after the
+  All occurrences of the substring `"__PARAM__"` in the manifest URLs will be substituted with the
+  `"install_parameter"` value. If `"install_parameter"` is absent, occurrences of `"__PARAM__"` are
+  removed. Note that `"__PARAM__"` cannot be part of the hostname. It needs to occur after the
   first '/' in the URL.
 
 ## Reference {: #reference }
@@ -122,7 +125,7 @@ An extension can override one or more of the following properties in the manifes
         <td>string</td>
         <td>search_url</td>
         <td>
-          <p>An search URL used by the search engine.</p>
+          <p>A search URL used by the search engine.</p>
         </td>
       </tr>
       <tr id="property-search_provider-encoding">
@@ -172,7 +175,7 @@ An extension can override one or more of the following properties in the manifes
         <td>array of string</td>
         <td><span class="optional">(optional)</span> alternate_urls</td>
         <td>
-          <p>A list of URL patterns that can be used, in addition to |search_url|.</p>
+          <p>A list of URL patterns that can be used, in addition to <em>search_url</em>.</p>
         </td>
       </tr>
       <tr id="property-search_provider-prepopulated_id">
@@ -194,7 +197,7 @@ An extension can override one or more of the following properties in the manifes
 
 - **`startup_pages` (array of string)** - optional
 
-  An array of length one containing a URL to be used as the startup page.
+An array of length one containing a URL to be used as the startup page.
 
 [1]: #homepage
 [2]: #search_provider

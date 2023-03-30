@@ -2,17 +2,15 @@
 layout: "layouts/doc-post.njk"
 title: "Using eval in Chrome extensions"
 date: 2012-09-18
-updated: 2014-05-22
+updated: 2023-02-06
 description: How to use eval() in a Chrome Extension.
 ---
 
-{% include 'partials/extensions/mv2page-in-mv3.md' %}
 
 Chrome's extension system enforces a fairly strict default [**Content Security Policy (CSP)**][1].
 The policy restrictions are straightforward: script must be moved out-of-line into separate
 JavaScript files, inline event handlers must be converted to use `addEventListener`, and `eval()` is
-disabled. Chrome Apps have an [even more strict policy][2], and we're quite happy with the security
-properties these policies provide.
+disabled.
 
 We recognize, however, that a variety of libraries use `eval()` and `eval`\-like constructs such as
 `new Function()` for performance optimization and ease of expression. Templating libraries are
@@ -22,8 +20,7 @@ extensions' `eval`\-less world. Removing support for that functionality has ther
 problematic than expected][4] for developers.
 
 This document introduces sandboxing as a safe mechanism to include these libraries in your projects
-without compromising on security. For brevity, we'll be using the term _extensions_ throughout, but
-the concept applies equally to applications.
+without compromising on security.
 
 ## Why sandbox? {: #why_sandbox }
 
@@ -151,18 +148,17 @@ properly execute. The [Writing Secure Web Apps and Chrome Extensions][14] presen
 I/O 2012 gives some good examples of these technique in action, and is worth 56 minutes of your
 time.
 
-[1]: /docs/extensions/mv3/contentSecurityPolicy
+[1]: /docs/extensions/mv3/manifest/content_security_policy/#default-policy
 [2]: /docs/extensions/mv3/contentSecurityPolicy
-[3]: http://angularjs.org/
-[4]: http://crbug.com/107538
-[5]:
-  http://www.whatwg.org/specs/web-apps/current-work/multipage/origin-0.html#sandboxed-origin-browsing-context-flag
+[3]: https://angularjs.org/
+[4]: https://crbug.com/107538
+[5]: https://www.whatwg.org/specs/web-apps/current-work/multipage/origin-0.html#sandboxed-origin-browsing-context-flag
 [6]: /docs/extensions/mv3/samples#sandboxed-frame
-[7]: http://handlebarsjs.com
+[7]: https://handlebarsjs.com
 [8]: /docs/extensions/examples/howto/sandbox/sandbox.html
 [9]: /docs/extensions/mv3/event_pages
 [10]: /docs/extensions/examples/howto/sandbox/eventpage.html
 [11]: /docs/extensions/examples/howto/sandbox/eventpage.js
 [12]: https://developer.mozilla.org/en/DOM/window.postMessage
 [13]: /docs/extensions/mv3/desktop_notifications
-[14]: http://www.youtube.com/watch?v=GBxv8SaX0gg
+[14]: https://www.youtube.com/watch?v=GBxv8SaX0gg

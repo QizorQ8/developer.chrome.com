@@ -1,4 +1,7 @@
 {
+  "autoplay": {
+    "title": "i18n.tags.autoplay"
+  },
   "news": {
     "title": "i18n.tags.news"
   },
@@ -11,14 +14,26 @@
   "amp": {
     "title": "i18n.tags.amp"
   },
+  "capabilities": {
+    "title": "i18n.tags.capabilities"
+  },
+  "case-study": {
+    "title": "i18n.tags.case-study"
+  },
+  "chrome": {
+    "title": "i18n.tags.chrome"
+  },
   "chromium-chronicle": {
     "title": "i18n.tags.chromium-chronicle"
   },
   "cookies": {
     "title": "i18n.tags.cookies"
   },
-  "deprecations": {
-    "title": "i18n.tags.deprecations"
+  "deprecations-removals": {
+    "title": "i18n.tags.deprecations-removals"
+  },
+  "device-characteristics": {
+    "title": "i18n.tags.device-characteristics"
   },
   "devices": {
     "title": "i18n.tags.devices"
@@ -35,6 +50,9 @@
   "file-system": {
     "title": "i18n.tags.file-system"
   },
+  "fugu-case-study": {
+    "title": "i18n.tags.fugu-case-study"
+  },
   "games": {
     "title": "i18n.tags.games"
   },
@@ -47,17 +65,23 @@
   "html": {
     "title": "i18n.tags.html"
   },
+  "identity": {
+    "title": "i18n.tags.identity"
+  },
+  "media": {
+    "title": "i18n.tags.media"
+  },
   "new-in-chrome": {
     "title": "i18n.tags.new-in-chrome"
+  },
+  "origin-trials": {
+    "title": "i18n.tags.origin-trials"
   },
   "privacy": {
     "title": "i18n.tags.privacy"
   },
   "progressive-web-apps": {
     "title": "i18n.tags.progressive-web-apps"
-  },
-  "removals": {
-    "title": "i18n.tags.removals"
   },
   "security": {
     "title": "i18n.tags.security"
@@ -70,5 +94,11 @@
   },
   "devtools-engineering": {
     "title": "i18n.tags.devtools-engineering"
+  },
+  "devtools-architecture": {
+    "title": "i18n.tags.devtools-architecture"
+  },
+  "example": {
+    "title": "i18n.tags.example"
   }
 }

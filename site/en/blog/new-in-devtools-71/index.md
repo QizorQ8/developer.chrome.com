@@ -14,6 +14,8 @@ tags:
   - chrome-71
 ---
 
+{% Partial 'devtools/banner.md' %}
+
 New features and major changes coming to Chrome DevTools in Chrome 71 include:
 
 - [Hover over a Live Expression to highlight a DOM node][1]
@@ -176,6 +178,10 @@ The `mouse` type tells DevTools to log all mouse-related events, such as `moused
 Other supported types are `key`, `touch`, and `control`.
 
 Check out [Command Line Reference][16] for other handy functions that you can call from the Console.
+
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/whats-new.md' %}
 
 [1]: #hover
 [2]: #store

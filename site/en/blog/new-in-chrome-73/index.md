@@ -32,7 +32,7 @@ In Chrome 73, we've added support for:
 
 And there's [plenty more](#more)!
 
-I'm [Pete LePage](https://twitter.com/petele). Let's dive in and see
+I'm [Pete LePage](https://petelepage.com/). Let's dive in and see
 what's new for developers in Chrome 73!
 
 ## Change log
@@ -52,7 +52,7 @@ Progressive Web Apps provide an installable, app-like experience, built and
 delivered directly via the web. In Chrome 73, we've added support for macOS,
 bringing support for
 [Progressive Web Apps to all desktop platforms](https://developers.google.com/web/progressive-web-apps/desktop) -
-Mac, Windows, Chrome OS and Linux, as well as mobile, simplifying web app
+Mac, Windows, ChromeOS and Linux, as well as mobile, simplifying web app
 development.
 
 A Progressive Web App is fast, and reliably so; always loading and performing

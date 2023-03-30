@@ -15,7 +15,7 @@ more about [**migrating your app**][2].
 {% endAside %}
 
 Kiosk Apps are Chrome Apps that are designed to always run fullscreen using [Single App Kiosk
-Mode][3] on Chrome OS and do not allow the user to exit the app. They're great for a purpose-built
+Mode][3] on ChromeOS and do not allow the user to exit the app. They're great for a purpose-built
 Chrome device, such as a guest registration desk, a library catalog station, or a point-of-sale
 system in a store.
 
@@ -32,7 +32,7 @@ screen is yours to use as you wish.
 
 ## How they behave {: #Behavior }
 
-When a Kiosk App is configured to run on Chrome OS using [Single App Kiosk Mode][6], the user has no
+When a Kiosk App is configured to run on ChromeOS using [Single App Kiosk Mode][6], the user has no
 control over the app's lifecycle. The user cannot exit the app or switch to another task. However,
 as an app developer, you can offer a "logout" or "exit" button within the app to close all its
 windows, which terminates the session and returns the user to the login screen.
@@ -49,7 +49,7 @@ allowing you to download and cache any assets your app may need while offline. A
 need to ensure that user data is stored locally while offline, then synced to your data server once
 online (see [Offline First][9]).
 
-Once the app is installed, it is available to anyone who walks up to the Chrome OS device. There is
+Once the app is installed, it is available to anyone who walks up to the ChromeOS device. There is
 no need for users to log in before using Single App Kiosk Mode.
 
 ## How to develop a Kiosk App {: #Develop }
@@ -92,7 +92,7 @@ Kiosk App through the [Chrome web store payment flow][14].
 - [Movie theater app][17]
 - [Kiosk apps in the Chrome Web Store][18]
 
-[1]: https://blog.chromium.org/2020/01/moving-forward-from-chrome-apps.html
+[1]: https://blog.chromium.org/2020/08/changes-to-chrome-app-support-timeline.html
 [2]: /apps/migration
 [3]: https://support.google.com/chromebook/answer/3134673
 [4]: https://support.google.com/chromebook/answer/3134673

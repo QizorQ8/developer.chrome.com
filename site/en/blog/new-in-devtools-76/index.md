@@ -14,6 +14,8 @@ tags:
   - chrome-76
 ---
 
+{% Partial 'devtools/banner.md' %}
+
 Hello! Here's what's new in [Chrome DevTools][1] in Chrome 76.
 
 {% YouTube id="GLUB2yzk0ZQ" %}
@@ -164,6 +166,10 @@ Check out the Puppeteer talk by [Joel][15] and [Andrey][16] from Google I/O 2019
 Puppeteer and Puppeteer for Firefox. The Firefox announcement happens around 4:05.
 
 {% YouTube id="MbnATLCuKI4" %}
+
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/whats-new.md' %}
 
 [1]: /docs/devtools
 [2]: https://crbug.com/931145

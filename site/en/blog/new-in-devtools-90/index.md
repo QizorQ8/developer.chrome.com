@@ -16,9 +16,7 @@ tags:
   - chrome-90
 ---
 
-{% Aside %}
-Interested in helping improve DevTools? Sign up to participate in [Google User Research here](https://google.qualtrics.com/jfe/form/SV_9YbKj35IGoGsDBj?reserved=1&utm_source=Website%20feature&Q_Language=en&utm_medium=own_web&utm_campaign=Q4&productTag=chrm&campaignDate=November2020&referral_code=UXFm430458).
-{% endAside %}
+{% Partial 'devtools/banner.md' %}
 
 {% YouTube id="UyXPdYLQVQk" %}
 
@@ -271,6 +269,10 @@ over time.
 
 Chromium issue: [887173][41]
 
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/whats-new.md' %}
+
 [1]: https://crbug.com/1166710
 [2]: https://crbug.com/1175699
 [3]: https://web.dev/vitals/
@@ -299,7 +301,7 @@ Chromium issue: [887173][41]
 [26]: https://crbug.com/1128885
 [27]: https://crbug.com/1069425
 [28]: https://crbug.com/1077657
-[29]: https://github.com/w3c/webappsec-permissions-policy/blob/main/permissions-policy-explainer.md
+[29]: /docs/privacy-sandbox/permissions-policy/
 [30]: https://crbug.com/1158827
 [31]: https://github.com/privacycg/first-party-sets
 [32]: https://crbug.com/1161427

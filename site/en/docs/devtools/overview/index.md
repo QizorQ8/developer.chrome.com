@@ -22,9 +22,9 @@ of the DevTools UI.
 
 - When you want to work with the DOM or CSS, right-click an element on the page and select
   **Inspect** to jump into the **Elements** panel. Or press Command+Option+C (Mac) or
-  Control+Shift+C (Windows, Linux, Chrome OS).
+  Control+Shift+C (Windows, Linux, ChromeOS).
 - When you want to see logged messages or run JavaScript, press Command+Option+J (Mac) or
-  Control+Shift+J (Windows, Linux, Chrome OS) to jump straight into the **Console** panel.
+  Control+Shift+J (Windows, Linux, ChromeOS) to jump straight into the **Console** panel.
 
 See [Open Chrome DevTools][2] for more details and workflows.
 
@@ -59,10 +59,9 @@ seriously boost your productivity.
 Simulate mobile devices.
 
 - [Device Mode][9]
-- [Test Responsive and Device-specific Viewports][10]
 - [Emulate Sensors: Geolocation & Accelerometer][11]
 
-### Elements panel {: #elements }
+### Elements panel & CSS {: #elements }
 
 {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/UjVAPTnFGxLEc5RLDwBy.png", alt="Elements Panel", width="800", height="609" %}
 
@@ -73,8 +72,11 @@ View and change the DOM and CSS.
 - [Inspect and Tweak Your Pages][14]
 - [Edit Styles][15]
 - [Edit the DOM][16]
-- [Inspect Animations][17]
+- [Find invalid, overridden, inactive, and other CSS][51]
+- [Identify potential CSS improvements][53]
+- [Emulate light/dark themes, contrast, and other CSS media features][52]
 - [Find Unused CSS][18]
+- [Inspect Animations][17]
 
 ### Console panel {: #console }
 
@@ -113,13 +115,17 @@ View and debug network activity.
 - [Network Panel Reference][32]
 - [Inspect Resources][43]
 
+### Recorder panel {: #recorder }
+
+Record, replay, and measure user flows.
+
+{% Img src="image/dPDCek3EhZgLQPGtEG3y0fTn4v82/XKjlKjhuoccuFPCQqQ05.png", alt="Recorder panel.", width="800", height="606" %}
+
+- [Get Started][54] 
+- [Explore extensions][55]
+- [Replay beyond Recorder][56]
+
 ### Performance panel {: #performance }
-
-{% Aside %}
-
-**Note:** In Chrome 58 the Timeline panel was renamed to the Performance panel.
-
-{% endAside %}
 
 {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/nCVPdzEUA2XIY5txAG1G.png", alt="Timeline Panel", width="800", height="649" %}
 
@@ -132,12 +138,6 @@ Find ways to improve load and runtime performance.
 - [Diagnose Forced Synchronous Layouts][37]
 
 ### Memory panel {: #memory }
-
-{% Aside %}
-
-**Note:** In Chrome 58 the Profiles panel was renamed to the Memory panel.
-
-{% endAside %}
 
 {% Img src="image/BrQidfK9jaQyIHwdw91aVpkPiib2/oR8gZtwxxhRLj77xYsWd.png", alt="Profiles Panel", width="800", height="655" %}
 
@@ -154,6 +154,7 @@ storage, cookies, Application Cache, images, fonts, and stylesheets.
 - [Debug Progressive Web Apps][40]
 - [Inspect and Manage Storage, Databases, and Caches][41]
 - [Inspect and Delete Cookies][42]
+- [View origin trial information][50]
 
 ### Security panel {: #security }
 
@@ -178,8 +179,7 @@ For help with using DevTools, Stack Overflow is the best channel.
 
 [Stack Overflow][47]
 
-To file bugs or feature requests on the DevTools docs, open a GitHub issue on the Web Fundamentals
-repository.
+To file bugs or feature requests on the DevTools docs, open a GitHub issue.
 
 [Docs Issues][48]
 
@@ -192,47 +192,53 @@ DevTools also has a Slack channel, but the team doesn't monitor it consistently.
 [3]: /docs/devtools/dom
 [4]: /docs/devtools/css
 [5]: /docs/devtools/javascript
-[6]: /docs/devtools/console/get-started
+[6]: /docs/devtools/console
 [7]: /docs/devtools/speed/get-started
 [8]: /docs/devtools/network
 [9]: /docs/devtools/device-mode
-[10]: /docs/devtools/device-mode/emulate-mobile-viewports
-[11]: /docs/devtools/device-mode/device-input-and-sensors
+[11]: /docs/devtools/sensors/
 [12]: /docs/devtools/dom
 [13]: /docs/devtools/css
-[14]: /docs/devtools/inspect-styles
-[15]: /docs/devtools/inspect-styles/edit-styles
-[16]: /docs/devtools/inspect-styles/edit-dom
-[17]: /docs/devtools/inspect-styles/animations
+[14]: /docs/devtools/css/#view
+[15]: /docs/devtools/css/reference/#change
+[16]: /docs/devtools/dom/#edit
+[17]: /docs/devtools/css/animations
 [18]: /docs/devtools/coverage
-[19]: /docs/devtools/console/get-started
+[19]: /docs/devtools/console
 [20]: /docs/devtools/console
-[21]: /docs/devtools/console/command-line-reference
-[22]: /docs/devtools/console/console-reference
+[21]: /docs/devtools/console/utilities
+[22]: /docs/devtools/console/api
 [23]: /docs/devtools/javascript
 [24]: /docs/devtools/javascript/breakpoints
-[25]: /web/tools/setup/setup-workflow
-[26]: /docs/devtools/snippets
+[25]: /docs/devtools/workspaces
+[26]: /docs/devtools/javascript/snippets
 [27]: /docs/devtools/javascript/reference
 [28]: /blog/new-in-devtools-65#overrides
 [29]: /docs/devtools/coverage
 [30]: /docs/devtools/network
-[31]: /docs/devtools/network/issues
+[31]: /docs/devtools/issues
 [32]: /docs/devtools/network/reference
 [33]: /docs/devtools/speed/get-started
 [34]: /docs/devtools/evaluate-performance
 [35]: /docs/devtools/evaluate-performance/reference
-[36]: /docs/devtools/rendering-tools
-[37]: /docs/devtools/rendering-tools/forced-synchronous-layouts
+[36]: /docs/devtools/evaluate-performance
+[37]: /docs/devtools/evaluate-performance/#find_the_bottleneck
 [38]: /docs/devtools/memory-problems
 [39]: /docs/devtools/rendering-tools/js-execution
 [40]: /docs/devtools/progressive-web-apps
-[41]: /docs/devtools/manage-data/local-storage
-[42]: /docs/devtools/manage-data/cookies
+[41]: /docs/devtools/storage/localstorage
+[42]: /docs/devtools/storage/cookies
 [43]: /docs/devtools/resources
 [44]: /docs/devtools/security
 [45]: https://crbug.com/new
 [46]: https://twitter.com/ChromeDevTools
 [47]: https://stackoverflow.com/questions/ask?tags=google-chrome-devtools
-[48]: https://github.com/google/webfundamentals/issues/new
+[48]: https://github.com/GoogleChrome/developer.chrome.com/issues/new/choose
 [49]: https://chromiumdev.slack.com/messages/devtools/
+[50]: /docs/web-platform/origin-trials/#devtools
+[51]: /docs/devtools/css/issues/
+[52]: /docs/devtools/rendering/emulate-css/
+[53]: /docs/devtools/css-overview/
+[54]: /docs/devtools/recorder/
+[55]: /docs/devtools/recorder/extensions/
+[56]: /blog/extend-recorder/

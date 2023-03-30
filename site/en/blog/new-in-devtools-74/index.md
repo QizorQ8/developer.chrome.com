@@ -16,6 +16,8 @@ tags:
   - chrome-74
 ---
 
+{% Partial 'devtools/banner.md' %}
+
 Welcome back! Here's what's new.
 
 ## Video version of this page {: #video }
@@ -159,6 +161,10 @@ The [Timings section][10] of a Performance recording now marks First Paint.
 
 Check out [Get Started With Viewing And Changing The DOM][11] for a hands-on tour of DOM-related
 features.
+
+
+{% Partial 'devtools/reach-out.md' %}
+{% Partial 'devtools/whats-new.md' %}
 
 [1]: https://web.dev/tap-targets
 [2]: https://developers.google.com/web/tools/lighthouse
